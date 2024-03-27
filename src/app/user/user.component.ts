@@ -13,8 +13,14 @@ import { GamesComponent } from '../games/games.component';
 export class UserComponent {
   username = 'Jemma';
   isLoggedIn = false;  // <-- esto funcioan como un State
+  favGame = '';
+
+  getFavourite(gameName: string) {
+    this.favGame = gameName;
+  }
+
 
   greet(){
-    alert('hellooooo!')
+    alert('Helloooooo ' + this.username )
   }
 }
