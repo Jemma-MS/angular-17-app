@@ -1,11 +1,31 @@
 <section>
-  @if (isLoggedIn) {
-    <p>Bienvenido, {{ username }}</p>
+  <!-- @if (isLoggedIn) {
+    <p>Welcome, {{ username }}</p>
+    <img
+    (click)="greet()"
+    alt="photo" src="https://github.com/Jemma-MS.png">
+    <app-games></app-games>
+    <hr>
+    <button (click)="isLoggedIn = false"> Sign Out </button>
   } @else {
-    <p>Inicia Sesión</p>
+    <p>Log In</p>
+    <button (click)="isLoggedIn = true"> Log In </button>
+  } -->
+
+  @if (isLoggedIn) {
+    <p>Welcome, {{ username }}</p>
+    <img
+    (click)="greet()"
+    alt="photo" src="https://github.com/Jemma-MS.png">
+  } @else {
+    <p>Log In</p>
+    <button (click)="isLoggedIn = true"> Log In </button>
   }
+
+  <app-games username=" {{ username }}"></app-games>
+
+
+
 </section>
-
-
 
 

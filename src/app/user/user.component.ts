@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
+import { GamesComponent } from '../games/games.component';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [GamesComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
 
 //este es el que se manda a llamar para montarlo
 export class UserComponent {
-  username = 'jemma';
-  isLoggedIn = true;
+  username = 'Jemma';
+  isLoggedIn = false;  // <-- esto funcioan como un State
 
+  greet(){
+    alert('hellooooo!')
+  }
 }

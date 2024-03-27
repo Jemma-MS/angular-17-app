@@ -12,7 +12,7 @@ import { UserComponent } from './user/user.component';
   // template: `<h1> Hola Mundo desde {{ city.toUpperCase() }} </h1>
   // <app-user></app-user>
   // `,
-  styles: ``,
+  styles: ``
 
 })
 export class AppComponent {
