@@ -25,23 +25,31 @@ export class GamesComponent {
   }
 
   games = [
+
     {
       id: 1,
       name: 'Uncharted 4'
     },
     {
       id: 2,
-      name: 'Grand Theft Auto 5'
+      name: 'Red Dead Redemption 1'
     },
     {
       id: 3,
-      name: 'Forza Horizon 4'
+      name: 'The Last of Us Part 2'
     },
     {
       id: 4,
-      name: 'Red Dead Redemption 1'
+      name: 'Red Dead Redemption 2'
+    },
+    {
+      id: 5,
+      name: 'Grand Theft Auto V'
+    },
+    {
+      id: 6,
+      name: 'Sleeping Dogs'
     }
 
   ]
-
 }
